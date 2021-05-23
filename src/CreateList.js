@@ -15,8 +15,8 @@ function CreateList(props) {
                     <Modal.Title>New List</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <input type="text" placeholder="Title" value={props.singledata.title} onChange={props.handleChange} className="d-block my-3" />
-                    <input type="text" placeholder="Author" value={props.singledata.author} onChange={props.handleChange} className="d-block my-3" />
+                    <input type="text" placeholder="Title" value={props.singledata.title} name="title" onChange={props.handleChange} className="d-block my-3" />
+                    <input type="text" placeholder="Author" value={props.singledata.author} name="author" onChange={props.handleChange} className="d-block my-3" />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>Close</Button>
